@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.coco.chess">
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/oo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/oo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Chessy">
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-2341497470012319~5275649549"/>
+        <activity android:name="com.coco.chess.chessview.homescreen"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.coco.chess.chessview.plainactivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.coco.chess.MainActivity"
+            android:screenOrientation="portrait"/>
+    </application>
+
+</manifest>
